@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ChurchFamilies>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+	<ul>
+	@{
+	foreach(var family in ContentModels)
+	{
+		<li>family.Name</li>
+	}
+	 }
+	</ul>
+
